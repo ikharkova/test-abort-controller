@@ -1,0 +1,31 @@
+@import '../../assets/styles/color.module.scss';
+
+.picture-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 380px;
+
+  .title {
+    font-size: 18px;
+    color: $medium-gray;
+  }
+
+ .picture-wrapper {
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  line-height: 0;
+
+  > img {
+    width: 100%;
+  }
+ }
+ .line {
+  width: 100vw;
+  height: 1px;
+  background-color: $light-gray;
+  margin: 10px 0;
+ } 
+}

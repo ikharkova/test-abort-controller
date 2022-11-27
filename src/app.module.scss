@@ -1,0 +1,27 @@
+@import './assets/styles/color.module.scss';
+
+.main {
+  padding: 50px 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  // to get a screen height by ref
+  height: 100vh;
+
+  .not-result {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    color: $medium-gray;
+
+    .emoji-icon {
+      width: 30px;
+      path {
+        fill: $medium-gray
+      }
+    }
+  }
+}
+

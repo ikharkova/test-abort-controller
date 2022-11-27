@@ -1,0 +1,52 @@
+@import '../../assets/styles/color.module.scss';
+
+.lds-grid {
+  display: flex;
+  position: relative;
+  font-size: 25px;
+  color: $light-gray;
+
+  & div {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $light-gray;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  & div:nth-child(1) {
+    top: 20px;
+    left: 90px;
+    animation-delay: 0s;
+  }
+  & div:nth-child(2) {
+    top: 20px;
+    left: 99px;
+    animation-delay: 0.07s;
+  }
+  & div:nth-child(3) {
+    top: 20px;
+    left: 107px;
+    animation-delay: 0.14s;
+  }
+  & div:nth-child(4) {
+    top: 20px;
+    left: 115px;
+    animation-delay: 0.21s;
+  }
+  & div:nth-child(5) {
+    top: 20px;
+    left: 123px;
+    animation-delay: 0.28s;
+  }
+}
+
+
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

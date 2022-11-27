@@ -1,0 +1,14 @@
+@import '../../assets/styles/color.module.scss';
+
+.search-box {
+  width: 400px;
+  border: 2px solid $light-gray;
+  border-radius: 30px;
+  padding: 20px 20px;
+  font-size: 20px;
+  color: $medium-gray;
+  
+  &::placeholder {
+    color: $light-gray;
+  }
+}
